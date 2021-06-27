@@ -32,6 +32,6 @@ Similarly for 2017 the refactored code took  0.078125 seconds to run instead of 
  
  The two stocks that stand out are naturally the stocks that show gains for both 2017 and 2018. ENPH has risen by 211.4% in 24 months and RUN has climbed 89,5%. Both stocks have icreased their daily volumes in 2018. ENPH had in fact the highest daily volume in 2018 rising by 275% compared to the year before .Although there was a slight increase in Total Daily Volumes in 2018 by around 6% compared to the previous year some stocks lost or gained volume disproportionately. This might serve as a forecast of higher volatility for these stocks. 
  
- ![](resources/AllStockAnalysis.PNG)
+ ![](resources/AllStocksAnalysis2017.png)
  
  
