@@ -11,7 +11,13 @@ code runs as fast as possible.
 
 ### Refactored_Code_Runtime
 
- By declaring the  variable ```tickerIndex``` and subtracting the nested loop in the original code, I was able to reduce runtime. 
+The range in the code where change could happen was clearly the nested loop. In this case we are restructuring the For loop with the help of a 
+newly declared variable ```tickerIndex```. 
+```
+    Dim tickerIndex As Single
+    tickerIndex = 0
+```    
+This variable connects the tickers with the three output arrays declared: ```tickerVolumes```,```tickerStartingPrices``` and```tickerEndingPrices```.  
 
 ![](resources/test1.png)
 
@@ -30,11 +36,10 @@ Similarly for 2017 the refactored code took  0.078125 seconds to run instead of 
  
 ## Summary
  
-Refactoring a code is a refining art. There is always an opportunity for improvement. This improvement most of the times is a turn to simplicity. The simpler the code is the faster the code is to run, to read and to refactor. Refactoring also means a code can find its way to the hands of hundreds of different individuals with different thinking processess different degrees of practicality and evolve in a way its creator did not imagine. I feel coding is ultimately a team sport. Refactoring is defending and passing the ball in front to attack in a more effective way. Refactoring a code may be unfavorable is if the code is already optimal and is being refactored regardless, or if the refactored code turns out to be slower and less effective. 
+ Refactoring a code is a refining art. There is always an opportunity for improvement. This improvement most of the times is a turn to simplicity. The simpler the code is the faster the code is to run, to read and to refactor. Refactoring also means a code can find its way to the hands of hundreds of different individuals with different thinking processess different degrees of practicality and evolve in a way its creator did not imagine. I feel coding is ultimately a team sport. Refactoring is defending and passing the ball in front to attack in a more effective way. Refactoring a code may be unwise if the code is already optimal and is being refactored regardless, or if the refactored code turns out to be slower and less effective in the hands of less capable creator. 
  
  ### REFactoring_VBA 
  
-In our case refactoring allowed us to catch ourselves inside a loop within a loop and really wonder if we were happier with simply being in a loop. A simpler path 
-cut our running time in half by staying one layer above the original code as we did not have to resort to a nested loop. While decreasing the runtime by 25% may    not be so significant in the case of 12 stocks, it will be essential in    processing thousands of stocks. 
+ In our scenario, refactoring allowed us to catch ourselves inside a loop within a loop and really wonder if we were happier with simply being in a loop. A simpler path cut our running time by staying one layer above the original code, using fewer conditionals( = asking fewer questions) and no nested loops. Each time a question is asked the whole array has to be read to provide an answer. That is time consuming. While decreasing the runtime by 25% may not be so significant in the case of 12 stocks, it will be essential in processing thousands of stocks. 
  
  
