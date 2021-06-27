@@ -11,13 +11,25 @@ code runs as fast as possible.
 
 ### Refactored_Code_Runtime
 
-The range in the code where change could happen was clearly the nested loop. In this case we are restructuring the For loop with the help of a 
+
+- The range in the code where change could happen was clearly the nested loop. In this case we are restructuring the For loop with the help of a 
 newly declared variable ```tickerIndex```. 
+
+
 ```
     Dim tickerIndex As Single
     tickerIndex = 0
 ```    
-This variable connects the tickers with the three output arrays declared: ```tickerVolumes```,```tickerStartingPrices``` and```tickerEndingPrices```.  
+
+- This variable connects the tickers with the three output arrays declared: ```tickerVolumes```,```tickerStartingPrices``` and```tickerEndingPrices```. 
+
+
+- We are then using   ```tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value```   to increase the volume of the current ticker without the use of a conditional as we did in the original script. Our code then, only has to answer to a very specific question. 
+
+     ***Is it now time to increase the index number?***
+ 
+ 
+ 
 
 ![](resources/test1.png)
 
