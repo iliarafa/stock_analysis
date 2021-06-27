@@ -24,3 +24,4 @@ without the need of a conditional within the loop.
 Our refactored loop ran in 0.0703125 seconds for 2018 in contrast to 0.3359375 seconds of the original script runtime. 
 Similarly for 2017 the refactored code took  0.078125 seconds to run instead of 0.3203125. **The refactored code ran approximately 25% faster.** 
 
+![](resources/Combined2017.PNG) 
